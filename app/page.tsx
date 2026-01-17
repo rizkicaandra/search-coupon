@@ -52,6 +52,20 @@ export default function Home() {
               </div>
 
               <div className="space-y-4 md:space-y-6">
+                <div className="bg-slate-700/30 rounded-xl p-4 md:p-6 border border-slate-600">
+                  <h3 className="text-base md:text-lg font-semibold text-white mb-2">Quick Stats</h3>
+                  <div className="grid grid-cols-2 gap-3 md:gap-4">
+                    <div className="text-center">
+                      <p className="text-2xl md:text-3xl font-bold text-emerald-400">{filteredCoupons.length}</p>
+                      <p className="text-[10px] md:text-xs text-slate-400 uppercase tracking-wide mt-1">Results</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl md:text-3xl font-bold text-blue-400">{coupons.length}</p>
+                      <p className="text-[10px] md:text-xs text-slate-400 uppercase tracking-wide mt-1">Total</p>
+                    </div>
+                  </div>
+                </div>
+
                 <div>
                   <label
                     htmlFor="search"
@@ -67,20 +81,6 @@ export default function Home() {
                     placeholder="Enter coupon code..."
                     className="w-full px-4 md:px-5 py-3 md:py-4 text-sm md:text-base border-2 border-slate-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-slate-400 focus:border-slate-500 text-white placeholder-slate-400 bg-slate-700/50 backdrop-blur-sm"
                   />
-                </div>
-
-                <div className="bg-slate-700/30 rounded-xl p-4 md:p-6 border border-slate-600">
-                  <h3 className="text-base md:text-lg font-semibold text-white mb-2">Quick Stats</h3>
-                  <div className="grid grid-cols-2 gap-3 md:gap-4">
-                    <div className="text-center">
-                      <p className="text-2xl md:text-3xl font-bold text-emerald-400">{filteredCoupons.length}</p>
-                      <p className="text-[10px] md:text-xs text-slate-400 uppercase tracking-wide mt-1">Results</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-2xl md:text-3xl font-bold text-blue-400">{coupons.length}</p>
-                      <p className="text-[10px] md:text-xs text-slate-400 uppercase tracking-wide mt-1">Total</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
